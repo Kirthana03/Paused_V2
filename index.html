@@ -76,7 +76,7 @@
             cluster.setAttribute('height',3)
             cluster.setAttribute('depth',3)
             cluster.setAttribute('rotation','0 0 0')
-            cluster.setAttribute('sound','src:#click-sound; on:click')
+            cluster.setAttribute('sound','src:#click-sound; on:click; volume:3.5')
             cluster.setAttribute('rotate-toggle','')
             // cluster.setAttribute('seq-toggle','')
             scene.appendChild(cluster)
@@ -113,6 +113,21 @@
             shader = "msdf"
             font= "https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/spacemono/SpaceMono-Regular.json"
             state-toggle>
+
+            <a-text align="center"
+      
+            position = "2.5 -6 0"
+            rotation = "-45 0 0"
+            side = "double"
+            color = "#FFA1A1"
+            value = "Point and click to continue reading."
+            width = "8"
+            shader = "msdf"
+            font= "https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/spacemono/SpaceMono-Regular.json"
+            state-toggle
+      
+            >
+            </a-text> 
             </a-text> 
           </a-circle>
         </a-plane>
@@ -156,6 +171,8 @@
       </a-plane>
 
       <!-- Stage 02.A -->
+<!-- 
+      <a-entity sound = "src: #A4; autoplay:true; loop:false; positional:false; on:click"></a-entity> -->
 
       <a-plane
       position="0 2 30"
@@ -164,7 +181,7 @@
       color="#000000"
       opacity="1"
       shader="flat"
-      sound = "src: #A4; autoplay:false; loop:false; positional:true; on:click"
+      sound = "src: #A4; autoplay:true; loop:false; positional:false; on:click"
       state-toggle
 >
 
@@ -199,7 +216,7 @@
         <a-text  align="center"
 
         
-        position = "0 1 0"
+        position = "0 1 0.5"
         value = "Meet the ever-growing wall of all my emotional self has recorded."
         width = "9"
         shader = "msdf"
@@ -216,6 +233,21 @@
       
       position = "0 2 25"
       value = "Try addressing them all and look back for a moment."
+      width = "20"
+      shader = "msdf"
+      font= "https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/spacemono/SpaceMono-Regular.json"
+      state-toggle
+
+      >
+      </a-text> 
+
+      <a-text align="center"
+      
+      position = "0 -16 25"
+      rotation = "-45 0 0"
+      side = "double"
+      color = "#AC9FFF"
+      value = "Point and click at the boxes of fleeting thoughts."
       width = "20"
       shader = "msdf"
       font= "https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/spacemono/SpaceMono-Regular.json"

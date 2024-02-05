@@ -8,7 +8,7 @@ AFRAME.registerComponent('last-toggle',{
         posZ = pos['z'] - 25;
         this.togglelast = function() {
             console.log('clicked');
-            el.setAttribute('position','0 2 -60'); 
+            el.setAttribute('position','0 2 -600'); 
             el.setAttribute('opacity','0');
             st2.setAttribute('animation', `property: position; to: ${posX} ${posY} ${posZ}; dir:alternate; dur:4000; loop:false`);
         }
@@ -16,6 +16,5 @@ AFRAME.registerComponent('last-toggle',{
     }, 
     remove: function() {
         this.el.removeEventListener('click',this.togglelast);
-
     }
 })

@@ -33,7 +33,9 @@
           <img id="St03" src="Assets/Stg03-Contentment.png">
           <img id="St04" src="Assets/Stg03-Regret.png">
           <audio id="A1" src="Assets/AmbStg01.mp3" preload="auto"></audio>
-          <audio id="A2" src="Assets/AmbStg02.mp3" preload="auto"></audio>
+          <audio id="A2" src="Assets/A5.mp3" preload="auto"></audio>
+          <audio id="A4" src="Assets/A4.mp3" preload="auto"></audio>
+          <audio id="A3" src="Assets/A3.mp3" preload="auto"></audio>
           <audio id="click-sound" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
         </a-assets>
         <a-entity oculus-touch-controls="hand: right"></a-entity>
@@ -126,7 +128,7 @@
         color="#000000"
         opacity="1"
         shader="flat"
-        sound = "src: #A2; autoplay:false; loop:true; positional:true; on:click"
+        sound = "src: #A2; autoplay:true; loop:false; positional:true; on:click"
         state-toggle
 >
         <a-circle
@@ -155,7 +157,6 @@
 
       <!-- Stage 02.A -->
 
-      <a-entity id = "Stg2Audio" sound="src: #A2"></a-entity>
       <a-plane
       position="0 2 30"
       width = "1000"
@@ -163,7 +164,7 @@
       color="#000000"
       opacity="1"
       shader="flat"
-      sound = "src: #A2; autoplay:true; loop:true; positional:"
+      sound = "src: #A4; autoplay:false; loop:false; positional:true; on:click"
       state-toggle
 >
 
@@ -192,7 +193,6 @@
       color="#000000"
       opacity="1"
       shader="flat"
-      sound = "src: #A2; autoplay:true; loop:true; positional:"
       state-toggle
 >
 
@@ -241,7 +241,7 @@
       color="#000000"
       opacity="1"
       shader="flat"
-      sound = "src: #A2; autoplay:true; loop:true; positional:"
+      sound = "src: #A4; autoplay:false; loop:true; positional:true; on:click"
       last-toggle
       > </a-plane>
       <!-- <a-circle
@@ -264,6 +264,7 @@
           height = "0.4188"
           scale = "6 6 1"
           opacity = 1
+          sound = "src: #A3; autoplay:false; loop:false; positional:true; on:click"
           opacity-toggle
         >
         </a-curvedimage>
@@ -276,6 +277,7 @@
         height = "0.4188"
         scale = "6 6 1"
         opacity = 1
+        sound = "src: #A3; autoplay:false; loop:false; positional:true; on:click"
         opacity-toggle
       >
       </a-curvedimage>
@@ -288,6 +290,7 @@
       height = "0.4188"
       scale = "6 6 1"
       opacity = 1
+      sound = "src: #A3; autoplay:false; loop:false; positional:true; on:click"
       opacity-toggle
     >
     </a-curvedimage>
@@ -300,6 +303,7 @@
     height = "0.4188"
     scale = "6 6 1"
     opacity = 1
+    sound = "src: #A3; autoplay:false; loop:false; positional:true; on:click"
     opacity-toggle
   >
   </a-curvedimage>
@@ -312,6 +316,7 @@
   height = "0.4188"
   scale = "6 6 1"
   opacity = 1
+  sound = "src: #A3; autoplay:false; loop:false; positional:true; on:click"
   opacity-toggle
 >
 </a-curvedimage>
@@ -324,6 +329,7 @@ radius = "1"
 height = "0.4188"
 scale = "6 6 1"
 opacity =  1
+sound = "src: #A3; autoplay:false; loop:false; positional:true; on:click"
 opacity-toggle
 >
 </a-curvedimage>
@@ -336,6 +342,7 @@ radius = "1"
 height = "0.4188"
 scale = "6 6 1"
 opacity = 1
+sound = "src: #A3; autoplay:false; loop:false; positional:true; on:click"
 opacity-toggle
 >
 </a-curvedimage>
@@ -348,6 +355,7 @@ radius = "1"
 height = "0.4188"
 scale = "6 6 1"
 opacity = 1
+sound = "src: #A3; autoplay:false; loop:false; positional:true; on:click"
 opacity-toggle
 >
 </a-curvedimage>
@@ -360,6 +368,7 @@ radius = "1"
 height = "0.4188"
 scale = "6 6 1"
 opacity = 1
+sound = "src: #A3; autoplay:false; loop:false; positional:true; on:click"
 opacity-toggle
 >
 </a-curvedimage>

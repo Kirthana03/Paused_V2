@@ -11,6 +11,7 @@
     <script src = "last-toggle.js"></script>
     <script src = "opacity-toggle.js"></script>
     <script src = "stg03-toggle.js"></script>
+    <script src = "seq-toggle.js"></script>
     <script src = "oculus-thumbstick-controls.js"></script>
     <title>Paused</title>
 </head>
@@ -19,15 +20,15 @@
         <a-assets>
           <a-asset-item id="cubeO" src="Assets/Cube01.obj"></a-asset-item>
           <a-asset-item id="cubeM" src="Assets/Cube01.mtl"></a-asset-item>
-          <img id="S1" class="toggle-image" src="Assets/01.png">
-          <img id="S2" class="toggle-image" src="Assets/02.png">
-          <img id="S3" class="toggle-image" src="Assets/03.png">
-          <img id="S4" class="toggle-image" src="Assets/04.png">
-          <img id="S5" class="toggle-image" src="Assets/05.png">
-          <img id="S6" class="toggle-image" src="Assets/06.png">
-          <img id="S7" class="toggle-image" src="Assets/07.png">
-          <img id="S8" class="toggle-image" src="Assets/08.png">
-          <img id="S9" class="toggle-image" src="Assets/09.png">
+          <img id="S1" class="toggle-image" src="Assets/10.png">
+          <img id="S2" class="toggle-image" src="Assets/11.png">
+          <img id="S3" class="toggle-image" src="Assets/12.png">
+          <img id="S4" class="toggle-image" src="Assets/13.png">
+          <img id="S5" class="toggle-image" src="Assets/14.png">
+          <img id="S6" class="toggle-image" src="Assets/15.png">
+          <img id="S7" class="toggle-image" src="Assets/16.png">
+          <img id="S8" class="toggle-image" src="Assets/17.png">
+          <img id="S9" class="toggle-image" src="Assets/18.png">
           <img id="St01" src="Assets/Stg03-People.png">
           <img id="St02" src="Assets/Stg03-Passion.png">
           <img id="St03" src="Assets/Stg03-Contentment.png">
@@ -224,7 +225,7 @@
         width = "9"
         shader = "msdf"
         font= "https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/spacemono/SpaceMono-Regular.json"
-        state-toggle
+        seq-toggle
 
 
 
@@ -272,16 +273,7 @@
       >
       </a-text> 
 
-      <a-plane
-      position="0 2 15"
-      width = "1000"
-      height = "1000"
-      color="#000000"
-      opacity="1"
-      shader="flat"
-      sound = "src: #A4; autoplay:false; loop:true; positional:true; on:click"
-      last-toggle
-      > </a-plane>
+
       <!-- <a-circle
       position = "0 -5 14"
       radius = "0.3"
@@ -411,10 +403,19 @@ opacity-toggle
 >
 </a-curvedimage>
 
-        <!-- <a-entity id="imageContainer">
-          <a-entity image-toggle></a-entity>
-        </a-entity>
-    </a-scene> -->
+<a-plane
+position="0 2 15"
+width = "1000"
+height = "1000"
+color="#000000"
+opacity="1"
+shader="flat"
+sound = "src: #A4; autoplay:false; loop:true; positional:true; on:click"
+last-toggle
+> </a-plane>
+
+
+    </a-scene>
 
     
 </body>

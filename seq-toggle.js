@@ -7,14 +7,14 @@ AFRAME.registerComponent('seq-toggle',{
         posY = pos['y']; 
         posZ = pos['z'] - 1;
         
-        this.toggleState = function() {
+        this.toggleSeq = function() {
             console.log('clicked');
             st2.setAttribute('animation', `property: position; to: ${posX} ${posY} ${posZ}; dir:alternate; dur:4000; loop:false`);
         }
-        this.el.addEventListener('click',this.toggleState);
+        this.el.addEventListener('click',this.toggleSeq);
     }, 
     remove: function() {
-        this.el.removeEventListener('click',this.toggleState);
+        this.el.removeEventListener('click',this.toggleSeq);
 
     }
 })

@@ -5,7 +5,7 @@ AFRAME.registerComponent('opacity-toggle',{
         let varPosX = varPos['x']; 
         let varPosY = varPos['y'] + 20; 
         let varPosZ = varPos['z'];
-        // var st2 = document.querySelector("#rig");
+        var st2 = document.querySelector("#rig");
         // pos = st2.getAttribute('position'); 
         // posX = pos['x']; 
         // posY = pos['y']; 
@@ -16,7 +16,7 @@ AFRAME.registerComponent('opacity-toggle',{
             // el.setAttribute('position','0 2 -60'); 
             // el.setAttribute('animation', 'property: scale; from:1 1 1; to: 0 0 0; dur:2000; loop:false');
             el.setAttribute('animation', `property: position; to: 0 ${varPosY} ${varPosZ}; dur:2000; loop:false`);
-            // st2.setAttribute('animation', `property: position; to: ${posX} ${posY} ${posZ}; dir:alternate; dur:4000; loop:false`);
+            // st2.setAttribute('animation', `property: position; to: ${posX} ${posY} ${posZ}; dur:1000; loop:false`);
             // el.components.sound.stopSound();
             // st2.components.sound.playSound();
         }
